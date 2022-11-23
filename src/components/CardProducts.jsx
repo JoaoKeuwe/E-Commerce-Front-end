@@ -3,6 +3,7 @@ const products = [
     id: 1,
     name: 'Basic Tee',
     href: '#',
+    description: 'Camiseta branca confortável' ,
     imageSrc: 'https://d2r9epyceweg5n.cloudfront.net/stores/166/116/products/camiseta_branca_111-f67bc5ead21c830a6c15126446617311-1024-1024.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
@@ -12,6 +13,7 @@ const products = [
     id: 2,
     name: 'Basic Tee',
     href: '#',
+    description: 'Camiseta branca confortável' ,
     imageSrc: 'https://d2r9epyceweg5n.cloudfront.net/stores/166/116/products/camiseta_branca_111-f67bc5ead21c830a6c15126446617311-1024-1024.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
@@ -21,6 +23,7 @@ const products = [
     id: 1,
     name: 'Basic Tee',
     href: '#',
+    description: 'Camiseta branca confortável' ,
     imageSrc: 'https://d2r9epyceweg5n.cloudfront.net/stores/166/116/products/camiseta_branca_111-f67bc5ead21c830a6c15126446617311-1024-1024.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
@@ -48,12 +51,13 @@ function CardProducts() {
               <div>
                 <div>
                   <h3>
-                    <a href={product.href}>
+                    <h2 style={{fontSize: 50}}>
                       <span aria-hidden="true" />
                       {product.name}
-                    </a>
+                    </h2>
+                    <p>{product.description}</p>
                   </h3>
-                  <p>{product.color}</p>
+                  <p style={{fontSize: 20}}>{product.color}</p>
                 </div>
                 <p style={{fontSize: 30}}>{product.price}</p>
               </div>
