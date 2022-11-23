@@ -1,5 +1,3 @@
-import camiseta from '../images/camiseta.png'
-
 const products = [
   {
     id: 1,
