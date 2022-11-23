@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function CarouselProducts() {
     return (
-        <div style={{width: 1000}}>
+        <div style={{width: 700}}>
         <Carousel>
           <Carousel.Item interval={1000}>
             <img
